@@ -35,6 +35,9 @@ From: bvlc/caffe:gpu
 %post
 	#Post setup script
 
+	#Load environment variables
+	. /environment
+
   #Default mount paths
 	mkdir /scratch /data /shared /fastdata
 
