@@ -8,9 +8,7 @@ From: bvlc/caffe:gpu
 	#Use bash as default shell
 	SHELL=/bin/bash
 
-	#Add nvidia driver paths
-	PATH="/nvbin:$PATH"
-	LD_LIBRARY_PATH="/nvlib;$LD_LIBRARY_PATH"
+	
 
 	#Add CUDA paths
 	CPATH="/usr/local/cuda/include:$CPATH"
@@ -41,8 +39,6 @@ From: bvlc/caffe:gpu
   #Default mount paths
 	mkdir /scratch /data /shared /fastdata
 
-  #Nvidia Library mount paths
-	mkdir /nvlib /nvbin
 
 
 %runscript
